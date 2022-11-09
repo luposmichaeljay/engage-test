@@ -1,0 +1,23 @@
+{
+  "name": "@engage/test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vue-cli-service ./src/components/Test.vue",
+    "build": "bili --name index --plugin vue --vue.css false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "2.7"
+  },
+  "devDependencies": {
+    "bili": "^5.0.5",
+    "rollup-plugin-vue": "^6.0.0",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
