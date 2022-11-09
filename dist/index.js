@@ -1,5 +1,5 @@
 /*!
- * @engage/test v0.0.1
+ * test-vue-engage v0.0.1
  * (c) 
  * Released under the ISC License.
  */
@@ -7,10 +7,17 @@
 
 var vue = require('vue');
 
-var script = {};
+var script = {
+  props: {
+    title: {
+      type: String,
+      "default": 'Hello'
+    }
+  }
+};
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return vue.openBlock(), vue.createElementBlock("h1", null, "Hello");
+  return vue.openBlock(), vue.createElementBlock("h1", null, vue.toDisplayString($props.title), 1 /* TEXT */);
 }
 
 script.render = render;
